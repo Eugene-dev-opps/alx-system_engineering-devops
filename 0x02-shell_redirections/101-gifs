@@ -1,0 +1,4 @@
+#!/bin/bash
+
+find . -type f -name '*.gif' -exec sh -c 'file="${1##*/}"; file="${file%.*}"; echo "$file"' _ {} \; | LC_ALL=C sort -f
+
