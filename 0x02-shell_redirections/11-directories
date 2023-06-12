@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Exclude the current and parent directories from the count
+count=$(find . -mindepth 1 -type d | grep -c '/')
+
+echo "$count"
+
